@@ -141,5 +141,206 @@ Commands are executed in the shell and interpreted by the kernel into hardware-l
 This session provided a comprehensive overview of Linux basics, emphasizing its architecture, open-source nature, security, and wide applicability in modern computing. The contrast with Windows highlighted Linux’s strengths in stability, flexibility, and security, making it a preferred choice for servers, developers, and researchers globally. The next steps involve hands-on practice with Linux commands and administration.
 
 ---
+## DAY2
+text
+# Linux Commands and System Management – Session Notes
+
+## Session Introduction
+- Overview of Linux basics  
+- Focus on essential Linux commands for OS management  
+- Practical learning using AWS Linux Virtual Server  
+- SSH used for secure remote access  
+- Understanding SSH prompt (username, IP, working directory)
+
+## User Privileges in Linux
+- Difference between normal user and root user  
+- Root user has administrative privileges  
+- Switch to root user using:
+sudo su
+
+text
+
+## Linux Directory Structure
+Linux follows a hierarchical file system starting from `/`.
+
+### Important Directories
+- `/bin` – Essential user binaries  
+- `/boot` – Boot loader files  
+- `/etc` – Configuration files  
+- `/sbin` – System binaries  
+- `/var` – Variable files (logs, cache)  
+- `/home` – User home directories  
+
+## Directory Navigation Commands
+- Change directory:
+cd /bin
+cd /boot
+cd /var
+cd /home
+
+text
+- List contents:
+ls
+
+text
+
+## Basic File and Directory Commands
+- List files and directories:
+ls
+ls -l
+ls -R
+
+text
+- Clear terminal screen:
+clear
+
+text
+
+## File Creation and Content Management
+- Create and write to a file:
+cat > filename
+
+text
+- View file content:
+cat filename
+
+text
+- Append content to a file:
+cat >> filename
+
+text
+- Create multiple empty files:
+touch file1 file2 file3
+
+text
+
+## Directory Creation
+- Create a directory:
+mkdir directory1
+
+text
+- Create nested directories:
+mkdir -p dir1/linux/admin
+
+text
+- View directory structure:
+tree
+
+text
+
+## Copying Files and Directories
+- Copy files:
+cp file1 dir1/
+
+text
+- Copy directories recursively:
+cp -rv dir2 dir1/
+
+text
+
+## Moving and Renaming Files and Directories
+- Move files or directories:
+mv file1 dir1/
+
+text
+- Rename files or directories:
+mv oldname newname
+
+text
+
+## Removing Files and Directories
+- Remove files:
+rm filename
+
+text
+- Remove empty directories:
+rmdir directory
+
+text
+- Remove directories with content:
+rm -r directory
+
+text
+
+## File Permissions in Linux
+### Permission Types
+- **Read (r)** – View file contents  
+- **Write (w)** – Modify file contents  
+- **Execute (x)** – Run executable files  
+
+### Permission Categories
+- **User (u)**  
+- **Group (g)**  
+- **Others (o)**  
+
+### View permissions
+ls -l filename
+
+text
+
+## Changing File Permissions
+- Symbolic method:
+chmod u=rwx,g=rw,o=r filename
+
+text
+- Grant full permissions:
+chmod u=rwx,g=rwx,o=rwx filename
+
+text
+
+## User Management
+- Create a new user:
+useradd username
+
+text
+- View user details:
+cat /etc/passwd
+
+text
+- Rename a user:
+usermod -l newname oldname
+
+text
+
+## System Monitoring and Networking Commands
+- Monitor system performance:
+top
+
+text
+- View network configuration:
+ifconfig
+
+text
+- Test connectivity:
+ping google.com
+
+text
+- Display hostname:
+hostname
+
+text
+
+## File Editing using vi Editor
+- Open file using vi:
+vi filename
+
+text
+- Edit, save, and exit using vi editor commands.
+
+## Conclusion
+- Covered essential Linux commands  
+- Understood file system, permissions, and user management  
+- Practiced commands on AWS Linux server  
+- Built a strong foundation for Linux system administration
+
+---
+
+## 📸 Screenshots (Optional)
+Add screenshots of your AWS Linux terminal or command output here for better documentation.
+
+## 🧩 Project Description & Outcomes
+**Objective:** To learn essential Linux and system administration commands for managing cloud-based servers.  
+**Outcome:** Gained hands-on knowledge of file management, user privileges, and system monitoring using AWS Linux environment.
+Would you like me to make this README slightly shorter and neater (for GitHub projects) or keep it as a detailed version for lab record/reference notes?
 
 **End of Summary**
