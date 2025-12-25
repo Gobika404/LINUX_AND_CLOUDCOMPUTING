@@ -143,167 +143,251 @@ This session provided a comprehensive overview of Linux basics, emphasizing its 
 ---
 ## DAY2
 text
-# Linux Commands and System Management – Session Notes
+# Linux Course Session Introduction and Setup
 
-## Session Introduction
-- Overview of Linux basics  
-- Focus on essential Linux commands for OS management  
-- Practical learning using AWS Linux Virtual Server  
-- SSH used for secure remote access  
-- Understanding SSH prompt (username, IP, working directory)
+## [[07:00]] Session Introduction
+- Recap of the previous session introducing Linux basics.  
+- The current session focuses on Linux commands essential for operating system management.  
+- A Linux virtual server is launched on **AWS (Amazon Web Services)** to provide a practical platform for command-line practice.  
+- The server incorporates a preconfigured **SSH (Secure Shell)** tool for secure remote command execution.  
+- Explanation of the SSH console interface, showing **username**, **host IP address**, and **current directory** indicated by the dollar (`$`) prompt.  
 
-## User Privileges in Linux
-- Difference between normal user and root user  
-- Root user has administrative privileges  
-- Switch to root user using:
+---
+
+## [[11:24]] User Privileges and Directory Structure in Linux
+- Differentiation between **normal users** and **root (superuser)** in Linux.  
+- Root user has administrative privileges, accessed through:
 sudo su
 
 text
-
-## Linux Directory Structure
-Linux follows a hierarchical file system starting from `/`.
-
-### Important Directories
-- `/bin` – Essential user binaries  
-- `/boot` – Boot loader files  
-- `/etc` – Configuration files  
-- `/sbin` – System binaries  
-- `/var` – Variable files (logs, cache)  
-- `/home` – User home directories  
-
-## Directory Navigation Commands
-- Change directory:
+- Directory navigation is performed with the `cd` command — similar to navigating folders in Windows, but executed via command line.  
+- Linux filesystem follows a **hierarchical tree structure** starting from the root directory `/`.  
+- Important system directories:
+- `/bin`  
+- `/boot`  
+- `/etc`  
+- `/sbin`  
+- `/var`  
+- `/home`
+- Demonstrated navigation using:
 cd /bin
 cd /boot
 cd /var
+cd /sbin
+
+text
+
+---
+
+## [[16:55]] Basic File and Directory Commands
+- `ls` command lists contents of the current directory.  
+- Colors differentiate files and directories (e.g., blue for directories, green for files).  
+- `clear` command clears the terminal.  
+- Navigate to home directory using:
 cd /home
 
 text
-- List contents:
+- Default user folder (`ec2-user`) is created upon server launch.  
+- Check contents with:
 ls
 
 text
 
-## Basic File and Directory Commands
-- List files and directories:
-ls
-ls -l
-ls -R
+---
 
-text
-- Clear terminal screen:
-clear
-
-text
-
-## File Creation and Content Management
-- Create and write to a file:
-cat > filename
-
-text
+## [[19:17]] File Creation and Content Management Using `cat` and `touch`
+- The `cat` (concatenate) command can:
+- Create a file:
+  ```
+  cat > filename
+  ```
 - View file content:
-cat filename
+  ```
+  cat filename
+  ```
+- Append data to a file:
+  ```
+  cat >> filename
+  ```
+- Example:
+cat > KT
 
 text
-- Append content to a file:
-cat >> filename
-
-text
-- Create multiple empty files:
+Type “hello world”, then append “welcome to XLR Linux class”.  
+- The `touch` command creates multiple empty files:
 touch file1 file2 file3
 
 text
+- Verify file creation:
+ls
 
-## Directory Creation
+text
+
+---
+
+## [[25:05]] Creating Directories with `mkdir`
 - Create a directory:
 mkdir directory1
 
 text
 - Create nested directories:
-mkdir -p dir1/linux/admin
+mkdir -p directory1/linux/admin
 
 text
-- View directory structure:
+- List files recursively:
+ls -R
+
+text
+- Install and use `tree` for a visual representation:
+yum install tree -y
+tree
+
+text
+- Navigate directories using:
+cd directory1
+cd linux
+cd admin
+
+text
+
+---
+
+## [[31:57]] Copying Files and Directories with `cp`
+- Copy files:
+cp source_file destination_directory
+
+text
+Example:
+cp file1 directory1/
+
+text
+- Copy directories recursively and verbosely:
+cp -rv dir2 dir1/
+
+text
+- Confirm using:
 tree
 
 text
 
-## Copying Files and Directories
-- Copy files:
-cp file1 dir1/
+---
+
+## [[41:01]] Moving Files and Directories with `mv`
+- Move (cut-paste) files:
+mv file1 directory1/
 
 text
-- Copy directories recursively:
-cp -rv dir2 dir1/
+- Move directories:
+mv directory2 directory1/
+
+text
+- Prompt appears if conflicts occur — confirmation required to overwrite.  
+
+---
+
+## [[45:43]] Renaming Files and Directories
+- Rename files:
+mv old_filename new_filename
+
+text
+- Rename directories:
+mv old_directory_name new_directory_name
+
+text
+- Example:
+mv file1 XLRfile
+mv directory2 xlrdirectory
+
+text
+- Verify changes with:
+ls
 
 text
 
-## Moving and Renaming Files and Directories
-- Move files or directories:
-mv file1 dir1/
+---
 
-text
-- Rename files or directories:
-mv oldname newname
-
-text
-
-## Removing Files and Directories
-- Remove files:
+## [[47:06]] Removing Files and Directories
+- Remove a file:
 rm filename
 
 text
 - Remove empty directories:
-rmdir directory
+rmdir directory_name
 
 text
 - Remove directories with content:
-rm -r directory
+rm -r directory_name
 
 text
+- Example: Deleting `XLRfile` and `xlrdirectory` confirmed using `ls`.
 
-## File Permissions in Linux
-### Permission Types
-- **Read (r)** – View file contents  
-- **Write (w)** – Modify file contents  
-- **Execute (x)** – Run executable files  
+---
 
-### Permission Categories
-- **User (u)**  
-- **Group (g)**  
-- **Others (o)**  
-
-### View permissions
+## [[48:57]] Understanding File Permissions in Linux
+- Linux permissions apply to:
+- **Owner (User)**
+- **Group**
+- **Others**
+- Permission Types:
+- **Read (r)** – open/read file.
+- **Write (w)** – modify content.
+- **Execute (x)** – run file or command.
+- View permissions:
 ls -l filename
 
 text
+- Example permission string:  
+`-rw-r--r--`  
+- User: read/write  
+- Group: read  
+- Others: read  
 
-## Changing File Permissions
-- Symbolic method:
-chmod u=rwx,g=rw,o=r filename
+---
 
-text
-- Grant full permissions:
-chmod u=rwx,g=rwx,o=rwx filename
-
-text
-
-## User Management
-- Create a new user:
-useradd username
+## [[51:19]] Modifying File Permissions with `chmod` (Symbolic Method)
+Format:
+chmod [u/g/o]=[r/w/x] filename
 
 text
-- View user details:
+- Example:
+chmod u=rwx,g=rw,o=r KTfile
+
+text
+- Verify with:
+ls -l KTfile
+
+text
+
+---
+
+## [[56:21]] Granting Full Access to All Users
+- Grant full permissions to all:
+chmod u=rwx,g=rwx,o=rwx KTfile
+
+text
+- Verify with `ls -l`.
+
+---
+
+## [[57:48]] User Management in Linux
+- Add new user:
+useradd John
+
+text
+- View all users:
 cat /etc/passwd
 
 text
-- Rename a user:
-usermod -l newname oldname
+- Modify (rename) user:
+usermod -l Johnson John
 
 text
+- User details are stored in `/etc/passwd`.  
 
-## System Monitoring and Networking Commands
-- Monitor system performance:
+---
+
+## [[01:01:05]] Additional Useful Linux Commands
+- Monitor processes:
 top
 
 text
@@ -312,35 +396,76 @@ ifconfig
 
 text
 - Test connectivity:
-ping google.com
+ping xlr.com
 
 text
-- Display hostname:
+- View system hostname:
 hostname
 
 text
 
-## File Editing using vi Editor
-- Open file using vi:
+---
+
+## [[01:03:06]] Editing Files Using `vi` Editor
+- Open file:
 vi filename
 
 text
-- Edit, save, and exit using vi editor commands.
-
-## Conclusion
-- Covered essential Linux commands  
-- Understood file system, permissions, and user management  
-- Practiced commands on AWS Linux server  
-- Built a strong foundation for Linux system administration
+- Modify text and save changes.
+- Example: Change “hello world” → “Linux world”.
+- Save and exit (`:wq`).
 
 ---
 
-## 📸 Screenshots (Optional)
-Add screenshots of your AWS Linux terminal or command output here for better documentation.
+## [[01:05:08]] Session Summary and Closing Remarks
+- Reviewed essential Linux commands:
+- File and directory management  
+- Permission handling  
+- User management  
+- System monitoring
+- Emphasized hands-on AWS server practice.
+- Encouraged continued command-line exploration.
+- Session concluded with appreciation and next class reminder.  
 
-## 🧩 Project Description & Outcomes
-**Objective:** To learn essential Linux and system administration commands for managing cloud-based servers.  
-**Outcome:** Gained hands-on knowledge of file management, user privileges, and system monitoring using AWS Linux environment.
-Would you like me to make this README slightly shorter and neater (for GitHub projects) or keep it as a detailed version for lab record/reference notes?
+---
 
-**End of Summary**
+## 📝 Summary Table of Key Linux Commands
+
+| Command | Description | Example Usage |
+|----------|--------------|----------------|
+| `sudo su` | Switch to root user (superuser) | `sudo su` |
+| `cd` | Change directory | `cd /bin` |
+| `ls` | List directory contents | `ls`, `ls -l`, `ls -R` |
+| `cat` | Create, view, append file contents | `cat > file`, `cat file`, `cat >> file` |
+| `touch` | Create one or more empty files | `touch file1 file2 file3` |
+| `mkdir` | Create directories | `mkdir directory1`, `mkdir -p dir1/dir2` |
+| `tree` | Display directory tree (requires install) | `tree` |
+| `cp` | Copy files or directories | `cp file1 dir1/`, `cp -rv dir2 dir1/` |
+| `mv` | Move or rename files/directories | `mv file1 dir1/`, `mv oldname newname` |
+| `rm` | Remove files | `rm file` |
+| `rmdir` | Remove empty directories | `rmdir directory` |
+| `chmod` | Change file permissions | `chmod u=rwx,g=rw,o=r file` |
+| `useradd` | Add new user | `useradd John` |
+| `usermod` | Modify user | `usermod -l Johnson John` |
+| `top` | Monitor processes and resource usage | `top` |
+| `ifconfig` | Display network configuration | `ifconfig` |
+| `ping` | Test network connectivity | `ping xlr.com` |
+| `hostname` | Show system hostname | `hostname` |
+| `vi` | Text editor for modifying files | `vi filename` |
+
+---
+
+## 🔑 Key Insights
+- Linux command-line navigation and file system understanding are essential for system management.  
+- Core commands (`cat`, `touch`, `mkdir`, `cp`, `mv`, `rm`) form the foundation for all Linux operations.  
+- File permissions enforce multi-level security through user, group, and others.  
+- User management ensures controlled administrative access.  
+- Monitoring and networking commands provide real-time system insights.  
+- Hands-on use in AWS enhances confidence in practical system administration.
+
+---
+
+## 🧩 Conclusion
+This session provided a **comprehensive foundation in Linux system management**, covering file and directory operations, file permissions, user creation, and system monitoring.  
+Through **AWS-hosted practical demonstrations**, participants gained real-world exposure to Linux command syntax and administration workflows.  
+Mastering these commands is crucial for aspiring **Linux administrators, developers, and DevOps practitioners**.
