@@ -1,5 +1,6 @@
 # LINUX_AND_CLOUDCOMPUTING
 
+## DAY1
 ### Summary of Linux Basics Training Session
 
 **Trainer:** Bala, with 13+ years experience at XLR Institute  
@@ -596,7 +597,7 @@ Mastering these commands is crucial for aspiring **Linux administrators, develop
 - It is essential for modern business operations and digital transformation.
 - Session recordings are available for revision and exam preparation.
 - Future sessions will explore advanced cloud concepts in detail.
-
+## DAY 4
   
 # Cloud Computing & Virtualization – Session Notes
 
@@ -817,5 +818,219 @@ A company needs three servers:
 
 ## Overall Summary
 This session provides a detailed understanding of **cloud computing benefits** such as scalability, cost efficiency, security, and accessibility. It explains **virtualization** as the core enabling technology, covering virtual machines, hypervisors, security challenges, and real-world business use cases. Together, cloud computing and virtualization offer **flexible, secure, and cost-effective IT solutions** for organizations of all sizes.
+
+
+## DAY 5
+# Exar Learning Hub – Cloud Computing & AWS Training Session Notes
+
+## Introduction and Overview of Exar Learning Hub
+- Exar Learning Hub is located in Andheri East, near LC Andheri Metro station.
+- The institute has over 10 years of experience and has trained more than 200,000 students.
+- Recognized by DEO Silicon India and other accreditation bodies.
+- Focuses on experiential learning with spacious classrooms and high-definition projectors.
+
+---
+
+## Introduction to Cloud Computing Concepts
+- Cloud computing provides computing resources over the internet.
+- Three primary cloud environments are introduced:
+  - **Private Cloud**
+  - **Public Cloud**
+  - **Hybrid Cloud**
+- These models form the foundation for cloud deployment and service models.
+
+---
+
+## Private Cloud
+- Owned and operated by a single organization.
+- Access is restricted to authorized internal users.
+- Infrastructure is maintained in the organization’s own data center.
+
+### Advantages
+- High security and privacy.
+- Full control over infrastructure and data.
+- Customizable security and configurations.
+
+### Examples
+- Hewlett Packard (HP)
+- Dell
+- VMware
+
+---
+
+## Public Cloud
+- Owned and managed by third-party providers.
+- Resources are shared among multiple users.
+- Operates on a pay-as-you-go pricing model.
+
+### Advantages
+- Cost-efficient.
+- Automatic updates and maintenance.
+- Accessible globally via the internet.
+
+### Examples
+- Amazon Web Services (AWS)
+- Microsoft Azure
+- Google Cloud Platform (GCP)
+
+---
+
+## Hybrid Cloud
+- Combination of private and public cloud environments.
+- Sensitive data remains in private cloud; scalable workloads use public cloud.
+
+### Benefits
+- Flexibility and scalability.
+- Cost optimization.
+- Better traffic and workload management.
+
+### Examples
+- IBM
+- DataCore Software
+- Rackspace
+- Red Hat
+
+---
+
+## Cloud Models Summary
+
+| Cloud Model   | Example Companies                          |
+|--------------|--------------------------------------------|
+| Public Cloud | AWS, Microsoft Azure, Google Cloud          |
+| Private Cloud| VMware, Dell, Oracle, Cisco                 |
+| Hybrid Cloud | HP, AWS                                    |
+
+---
+
+## On-Premise vs Cloud Environment
+
+### Data Center Overview
+- Physical facilities containing servers, storage, and networking equipment.
+- Includes backup power, cooling systems, security, and disaster recovery.
+- Major cloud providers operate global data centers (e.g., AWS Mumbai).
+
+### On-Premise Environment
+- Infrastructure owned and managed locally.
+- High cost, manpower, and maintenance requirements.
+
+### Cloud Environment
+- Infrastructure managed by cloud vendors.
+- Accessed remotely on a rental or pay-as-you-go basis.
+
+---
+
+## Comparison: On-Premise vs Cloud
+
+| Feature                    | On-Premise Environment              | Cloud Environment                 |
+|----------------------------|--------------------------------------|-----------------------------------|
+| Security Responsibility    | Organization-managed                | Vendor-managed                    |
+| Customization              | Limited                              | Flexible                          |
+| Software Updates           | Manual                               | Automatic                         |
+| Ownership                  | Full ownership                       | Data ownership only               |
+| Auditing & Compliance      | Complex                              | Simplified                        |
+| Accessibility              | Limited                              | Global access                     |
+| Performance & Reliability  | Hardware dependent                  | High availability                 |
+| Affordability              | Large enterprises                   | All organization sizes            |
+
+---
+
+## AWS Cloud Infrastructure
+- AWS infrastructure is divided into **Regions** and **Availability Zones**.
+- Indian AWS regions:
+  - Mumbai
+  - Hyderabad
+- Enables high availability and global deployment.
+
+---
+
+## AWS Usage Examples
+- Media and entertainment:
+  - Netflix
+  - Walt Disney
+  - DreamWorks
+  - Discovery
+- Gaming platforms and smart devices.
+- Global content delivery and application hosting.
+
+---
+
+## Launching Virtual Servers on AWS
+- Virtual servers (EC2 instances) can be launched instantly.
+- Supports Windows and Linux operating systems.
+- Multiple servers can be launched simultaneously.
+
+### Example Configuration
+- Windows Server 2022 (64-bit)
+- 1 vCPU
+- 1 GB RAM
+- 30 GB storage
+- Secure access using private key authentication.
+
+---
+
+## AWS Pricing Model
+- Pay-as-you-go, charged per hour.
+- Cost depends on OS and server configuration.
+
+| Instance Type        | CPU | RAM | Cost (USD/hr) |
+|---------------------|-----|-----|---------------|
+| Basic Windows Server| 1   | 1GB | ~$8.49        |
+| High-end Instances  | Up to 96 | Up to 192GB | Varies |
+
+---
+
+## Linux Servers on AWS
+- Lightweight and cost-effective.
+- Accessed via SSH tools such as PuTTY or MobaXterm.
+- Used for software installation, command execution, and deployments.
+
+---
+
+## Website Deployment on AWS
+- Web servers can be hosted on Linux instances.
+- Website is publicly accessible as long as the server runs.
+- Terminating the server removes access and data.
+
+---
+
+## Server Management & Cost Control
+- Options include:
+  - Stop
+  - Reboot
+  - Terminate
+- Termination deletes the instance permanently and stops billing.
+
+---
+
+## Cloud Platforms & Services
+- Major providers:
+  - AWS
+  - Google Cloud Platform
+  - Microsoft Azure
+- Services include:
+  - Compute
+  - Storage
+  - Networking
+  - Databases
+  - Monitoring
+  - Containers
+- Pricing varies by region and usage.
+
+---
+
+## Cloud Migration & Training
+- Organizations are migrating from on-premise to cloud.
+- Cloud vendors provide migration tools and services.
+- AWS certifications help build industry-ready cloud skills.
+
+---
+
+## Key Insights & Conclusions
+- Cloud computing is scalable, flexible, and cost-effective.
+- Public, private, and hybrid clouds serve different business needs.
+- Data centers are the backbone of cloud infrastructure.
+- AWS provides global reach, fast deployment, and flexible pricing.
+- Cloud skills and certifications are highly valuable for IT careers.
 ```
+
 
