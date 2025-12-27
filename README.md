@@ -469,3 +469,132 @@ text
 This session provided a **comprehensive foundation in Linux system management**, covering file and directory operations, file permissions, user creation, and system monitoring.  
 Through **AWS-hosted practical demonstrations**, participants gained real-world exposure to Linux command syntax and administration workflows.  
 Mastering these commands is crucial for aspiring **Linux administrators, developers, and DevOps practitioners**.
+
+
+## DAY3
+
+## Introduction to XLRE at Andheri East
+- XLRE’s dynamic Learning Hub is located just 5 minutes from LC Andheri Metro Station.
+- Over the past decade, XLRE has trained more than 200,000 students.
+- Recognized by Deloitte, Silicon India, and other accreditation bodies.
+- Classrooms are spacious and equipped with HD projectors and advanced acoustics for clear visibility and audio.
+- Hybrid learning mode allows students to attend live classes from home and revisit missed sessions with the same trainer.
+- XLRE focuses on career building, encouraging demo sessions and career discussions.
+
+## Workshop Collaboration and Feedback
+- XLRE collaborated on a 3-day Power BI workshop (approximately 12 hours).
+- Trainer Mr. Karthik was appreciated for deep conceptual clarity and practical explanations.
+- The workshop included hands-on machine learning basics.
+- Students praised smooth execution, practical learning, and efficient coordination from registration to certification.
+- XLRE managed logistics and organization, contributing to the workshop’s success.
+
+## Introduction to Cloud Computing: Overview and Importance
+- Cloud computing is a rapidly growing technology crucial for modern IT and job markets.
+- It delivers services such as servers, storage, databases, networking, software, and analytics over the Internet.
+- Example: Google Drive enables users to store and manage data remotely from any device.
+- Cloud eliminates limitations of physical storage and reduces maintenance costs.
+
+## Definition and Functionality of Cloud Computing
+- Cloud computing is the delivery of computing services over the Internet.
+- “Cloud” refers to remote servers, services, and applications instead of local storage.
+- Cloud vendors manage infrastructure, eliminating the need for physical servers.
+- Data and applications are accessible from any device (e.g., social media data remains available after phone changes).
+- Popular cloud applications include Gmail, Microsoft 365, Dropbox, and Google Drive.
+
+## Leading Cloud Vendors and Service Offerings
+| Vendor | Description | Examples |
+|------|------------|----------|
+| Amazon Web Services (AWS) | Leading cloud provider | AWS |
+| Microsoft Azure | Global cloud platform | Office 365 |
+| Google Cloud Platform | Cloud infrastructure and services | Google Drive, App Engine |
+| Others | Third-party and regional providers | Alibaba, SoftLayer, Salesforce |
+
+- Vendors operate global data centers and provide services via the Internet.
+- Cloud follows a **pay-as-you-go** pricing model.
+
+## Cloud Storage and Payment Models
+- Google Drive offers 15 GB free storage; additional storage requires payment.
+- Users rent storage and services instead of owning physical hardware.
+- Microsoft Azure provides cloud-based software like Office 365.
+- Cloud enables flexible access through browsers or applications from anywhere.
+
+## Traditional Hosting vs Cloud Computing
+- Traditional hosting requires physical servers, skilled staff, cooling, power, and maintenance.
+- High capital investment and long setup times (up to one month).
+- Servers remain idle during low demand, causing financial loss.
+- Scaling is difficult and costly.
+- Cloud removes these limitations with on-demand resources.
+
+## Advantages of Cloud Computing Over Traditional Models
+- Cloud vendors manage infrastructure, data centers, and virtualization.
+- High availability through global backups and redundancy.
+- Easy access to data and services from any device.
+- Reduced cost due to consumption-based pricing.
+- No capital expenditure on hardware.
+
+## Cloud Service Models Explained
+| Model | Description | Vendor Manages | User Manages | Examples |
+|-----|-------------|----------------|--------------|----------|
+| SaaS | Fully managed software | Infrastructure, OS, apps | Software usage | Gmail, Office 365, Salesforce |
+| PaaS | Platform for app development | Infrastructure, OS, runtime | Application development | Google App Engine, Heroku |
+| IaaS | Virtualized infrastructure | Physical servers, networking | OS, software, apps | AWS EC2, Azure IaaS |
+
+- SaaS: Renting a furnished house.
+- PaaS: Renting tools to build a house.
+- IaaS: Renting land to build anything.
+
+## Evolution and Market Leaders in Cloud Computing
+- The term “cloud” originated from Internet network diagrams.
+- Cloud adoption began around 20 years ago.
+- Market leaders include AWS, Microsoft Azure, IBM Cloud, and others.
+- Vendors handle maintenance and upgrades, reducing client workload.
+
+## Benefits of Cloud Computing
+- **Cost Reduction:** No large upfront investment.
+- **Scalability:** Resources can be scaled up or down instantly.
+- **Flexibility:** Supports remote work and collaboration.
+- **Business Continuity:** Built-in backups and disaster recovery.
+- **Competitive Advantage:** Faster deployment and innovation.
+- **Downtime Management:** High availability and failover mechanisms.
+
+## Security and Limitations
+- Cloud providers use advanced security and encryption.
+- Users must manage access and data security.
+- Limited control over backend infrastructure.
+- Dependence on third-party vendors for maintenance and firmware updates.
+
+## Cloud Adoption and Job Market Impact
+- Cloud powers major platforms like YouTube, Gmail, Dropbox, Facebook, and LinkedIn.
+- High demand for cloud professionals.
+- Certifications from AWS, Azure, and GCP improve employability.
+
+## Characteristics of Cloud Computing
+- Internet-based service delivery.
+- Remote hosting of data and applications.
+- Accessible from anywhere.
+- Utility-based pricing similar to electricity or gas.
+- Supports shared resources and on-demand scalability.
+
+## Summary: Why Use Cloud Computing?
+- Reduces IT costs and operational complexity.
+- Enables remote work without data loss risks.
+- Simplifies disaster recovery.
+- Provides enterprise-level technology to all businesses.
+- Improves collaboration through centralized document management.
+- Frees internal teams from server maintenance.
+
+## Historical Development of Cloud Computing
+- 1960s: Mainframe time-sharing concepts.
+- 1970s: Virtualization development.
+- 1990s: ARPANET and Internet foundation.
+- 1997: Term “cloud computing” formally defined.
+- 2006: AWS launches EC2 and S3.
+- 2010s: Rapid global cloud adoption and market growth.
+
+## Conclusion
+- Cloud computing delivers scalable, flexible, and cost-effective IT solutions.
+- It is essential for modern business operations and digital transformation.
+- Session recordings are available for revision and exam preparation.
+- Future sessions will explore advanced cloud concepts in detail.
+```
+
